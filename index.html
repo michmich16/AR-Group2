@@ -32,7 +32,29 @@
                 animation="property: rotation; from: 90 180 0; to: -90 -180 0; loop: true; dur: 1000"></a-entity>
         </a-marker>
 
+<<<<<<< HEAD
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
 </html>
+=======
+        <!-- Evelina -->
+        <a-assets>
+            <a-asset-item id="ev" src="assets/models/Character_Goblin_Warrior_Female/Character_Goblin_Warrior_Female.gltf" rotation="0 0 0"></a-asset-item>
+        </a-assets>
+        <a-marker type="barcode" value="1">
+    
+            <a-entity text="value: Evelina; anchor:center; baseline: top; side:double;" scale="10 10 10" 
+                position="5 0.5 1.5"></a-entity>
+            <a-entity gltf-model="#ev" scale="0.7 0.7 0.7" position="0 1 0" rotation="90 90 90" 
+                animation="property:rotation; from: 0 360 0; loop: true; dur: 1000"></a-entity>
+        </a-marker>
+
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+
+</html>
+>>>>>>> 8379ee476c0619dd8b69226d405017374b6306fe
