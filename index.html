@@ -8,11 +8,12 @@
     <a-scene vr-mode-ui="enabled:false" embedded
         arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
         <a-assets>
-            <a-asset-item id="Goblin1" src="./assets/robob.gltf" rotation="0 0 0"></a-asset-item>
+            <a-asset-item id="Goblin1" src="./assets/Character_Goblin_Male/Character_Goblin_Male.gltf"
+                rotation="0 0 0"></a-asset-item>
         </a-assets>
 
         <a-marker type="barcode" value="1">
-            <a-entity text="value: Godlin; anchor: center; side: double;" scale="13 13 13"
+            <a-entity text="value: Just a whiteboard; anchor: center; baseline:top; side: double;" scale="13 13 13"
                 position="5 0.5 1.5"></a-entity>
 
             <a-entity gltf-model="#Goblin1" scale="0.8 0.8 0.8" position="0 1 0" rotation="0 0 0"
