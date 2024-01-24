@@ -50,6 +50,19 @@
                 animation="property: rotation; from: 0 0 0, to: 0 0 0; loop: true; dur: 1000"></a-entity>
         </a-marker>
 
+         <!-- Lasse -->
+         <a-assets>
+            <a-asset-item id="Goblin3" src="./assets/models/Character_Goblin_Shaman/Character_Goblin_Shaman.gltf"
+                rotation="0 0 0"></a-asset-item>
+        </a-assets>
+
+        <a-marker type="barcode" value="1">
+            <a-entity text="value: Lasse; anchor: center; baseline: top; side: double;" scale="5 5 5"
+                position="2 0.4 1"></a-entity>
+            <a-entity gltf-model="#Goblin3" scale="0.5 0.5 0.5" position="0 0 0.75" rotation="0 0 0"
+                animation="property: rotation; from: 0 0 0, to: 0 0 0; loop: true; dur: 1000"></a-entity>
+        </a-marker>
+
         <a-entity camera></a-entity>
 
 
