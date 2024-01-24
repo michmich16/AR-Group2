@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html>
-<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<!-- we import arjs version without NFT but with marker + location based support -->
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+	<!-- we import arjs version without NFT but with marker + location based support -->
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-<body>
-    <a-scene vr-mode-ui="enabled:false" embedded
-        arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
-        <a-assets>
-            <a-asset-item id="Goblin1" src="./assets/models/Character_Goblin_Male/Character_Goblin_Male.gltf"
-                rotation="0 0 0"></a-asset-item>
-        </a-assets>
+	<body>
+		<a-scene
+			vr-mode-ui="enabled:false"
+			embedded
+			arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;"
+		>
+			<a-assets>
+				<!-- Michael -->
+				<a-asset-item
+					id="Goblin1"
+					src="./assets/models/Character_Goblin_Male/Character_Goblin_Male.gltf"
+					rotation="0 0 0"
+				></a-asset-item>
+				<!-- Rolf -->
+				<a-asset-item
+					id="Goblin2" 
+					src="./assets/models/Character_Goblin_Male/Character_Goblin_Male.gltf"
+					rotation="0 0 0"
+				></a-asset-item>
+			</a-assets>
 
-        <!-- Michael -->
         <a-marker type="barcode" value="1">
             <a-entity text="value: Michael; anchor: center; baseline: top; side: double;" scale="13 13 13"
                 position="5 0.5 1.5"></a-entity>
 
             <a-entity gltf-model="#Goblin1" scale="0.8 0.8 0.8" position="0 1 0" rotation="0 0 0"
                 animation="property: rotation; from: 90 180 0; to: -90 -180 0; loop: true; dur: 1000"></a-entity>
-        </a-marker>
+        <!-- ROLF -->
+				<a-entity
+					text="value: test test test; anchor: center; baseline: top; side: double;"
+					scale="13 13 13"
+					position="5 0.5 1.5"
+				></a-entity>
 
+				<a-entity
+					gltf-model="#Goblin2"
+					scale="0.8 0.8 0.8"
+					position="0 1 0"
+					rotation="0 0 0"
+					animation="property: rotation; from 0 180 0, to: 0 -180 0; loop: true; dur: 1000"
+				></a-entity>
+
+			</a-marker>
+
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
         <!-- Evelina -->
         <a-assets>
             <a-asset-item id="ev" src="assets/models/Character_Goblin_Warrior_Female/Character_Goblin_Warrior_Female.gltf" rotation="0 0 0"></a-asset-item>
